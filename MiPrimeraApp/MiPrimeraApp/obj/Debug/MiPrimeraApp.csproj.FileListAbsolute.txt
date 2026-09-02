@@ -8,3 +8,13 @@ C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\MiPrimeraApp\MiPrimeraApp\obj\
 C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.csproj.CoreCompileInputs.cache
 C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.exe
 C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.pdb
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\bin\Debug\MiPrimeraApp.exe.config
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\bin\Debug\MiPrimeraApp.exe
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\bin\Debug\MiPrimeraApp.pdb
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.csproj.AssemblyReference.cache
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.Form1.resources
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.Properties.Resources.resources
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.csproj.GenerateResource.cache
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.csproj.CoreCompileInputs.cache
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.exe
+C:\Users\Yosse\source\repos\PrograI-Semi-2026-v2\MiPrimeraApp\MiPrimeraApp\obj\Debug\MiPrimeraApp.pdb
