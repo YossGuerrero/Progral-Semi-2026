@@ -1,0 +1,17 @@
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\bin\Debug\net10.0-windows\SistemaEstadistico.exe
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\bin\Debug\net10.0-windows\SistemaEstadistico.deps.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\bin\Debug\net10.0-windows\SistemaEstadistico.runtimeconfig.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\bin\Debug\net10.0-windows\SistemaEstadistico.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\bin\Debug\net10.0-windows\SistemaEstadistico.pdb
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.Form1.resources
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.csproj.GenerateResource.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.AssemblyInfoInputs.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.AssemblyInfo.cs
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.csproj.CoreCompileInputs.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.sourcelink.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\refint\SistemaEstadistico.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.pdb
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\SistemaEstadistico.genruntimeconfig.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\SistemaEstadistico\SistemaEstadistico\obj\Debug\net10.0-windows\ref\SistemaEstadistico.dll

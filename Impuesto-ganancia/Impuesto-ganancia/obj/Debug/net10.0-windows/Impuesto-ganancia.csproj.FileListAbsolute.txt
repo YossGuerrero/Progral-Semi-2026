@@ -1,0 +1,17 @@
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\bin\Debug\net10.0-windows\Impuesto-ganancia.exe
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\bin\Debug\net10.0-windows\Impuesto-ganancia.deps.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\bin\Debug\net10.0-windows\Impuesto-ganancia.runtimeconfig.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\bin\Debug\net10.0-windows\Impuesto-ganancia.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\bin\Debug\net10.0-windows\Impuesto-ganancia.pdb
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto_ganancia.Form1.resources
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.csproj.GenerateResource.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.AssemblyInfoInputs.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.AssemblyInfo.cs
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.csproj.CoreCompileInputs.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.sourcelink.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\refint\Impuesto-ganancia.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.pdb
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\Impuesto-ganancia.genruntimeconfig.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\Impuesto-ganancia\Impuesto-ganancia\obj\Debug\net10.0-windows\ref\Impuesto-ganancia.dll
