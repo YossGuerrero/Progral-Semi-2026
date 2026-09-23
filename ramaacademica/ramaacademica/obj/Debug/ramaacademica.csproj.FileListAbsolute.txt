@@ -1,0 +1,5 @@
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.csproj.AssemblyReference.cache
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.Form1.resources
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.Properties.Resources.resources
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.csproj.GenerateResource.cache
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.csproj.CoreCompileInputs.cache
