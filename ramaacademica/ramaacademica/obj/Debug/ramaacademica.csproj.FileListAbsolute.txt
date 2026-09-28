@@ -3,3 +3,10 @@ C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\
 C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.Properties.Resources.resources
 C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.csproj.GenerateResource.cache
 C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.csproj.CoreCompileInputs.cache
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\bin\Debug\db_academica.mdf
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\bin\Debug\db_academica_log.ldf
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\bin\Debug\ramaacademica.exe.config
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\bin\Debug\ramaacademica.exe
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\bin\Debug\ramaacademica.pdb
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.exe
+C:\Users\Yosse\source\repos\Progral-Semi-2026sq\ramaacademica\ramaacademica\obj\Debug\ramaacademica.pdb

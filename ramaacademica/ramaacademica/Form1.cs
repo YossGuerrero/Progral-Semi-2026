@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace ramaacademica
         {
             InitializeComponent();
         }
+        Conexion objConexion = new Conexion();
         DataSet ds = new DataSet();
         DataTable dt = new DataTable();
         String accion = "nuevo";
@@ -25,10 +27,11 @@ namespace ramaacademica
         private void obtenerDatos()
         {
             ds.Clear();
-            ds = objConexion.ibtenerDatos();
+            ds = objConexion.obtenerDatos();
             dt = ds.Tables["Alumnos"];
             dt.PrimaryKey = new DataColumn[] { dt.Columns["idAlumno"] };
 
+            mostrarDatos();
         }
 
         private void mostrarDatos()
@@ -36,23 +39,88 @@ namespace ramaacademica
             if (dt.Rows.Count > 0)
             {
                 txtCodigoAlumno.Text = dt.Rows[posicion]["codigo"].ToString();
+                txtNombreAlumno.Text = dt.Rows[posicion]["nombre"].ToString();
+                txtDireccionAlumno.Text = dt.Rows[posicion]["direccion"].ToString();
+                txtTelefonoAlumno.Text = dt.Rows[posicion]["telefono"].ToString();
+                txtEmailAlumno.Text = dt.Rows[posicion]["email"].ToString();
+
+                lblRegistrarAlumno.Text = (posicion + 1) + " de " + dt.Rows.Count;
 
             }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void activarDesactivarCtrls(Boolean estado)
         {
-            (btnAgregarAlumno.Text = "Agregar");
-            btnAgregarAlumno.Text = "Guardar";
-            btnModificarAlumno.Text = "Cancelar";
+            grbDatos.Enabled = estado;
+            grbNavegacion.Enabled = !estado;
+        }
 
-        }else{//Guardar
-           btnModificarAlumno.Text = "Agregar
+        private void btnAgregarAlumno_Click(object sender, EventArgs e)
+        {
+            if (btnAgregarAlumno.Text == "Agregar")
+            {
+                btnAgregarAlumno.Text = "Guardar";
+                btnModificarAlumno.Text = "Cancelar";
 
+                activarDesactivarCtrls(true);
+
+            }
+            else
+            {
+                //Guardar
+                activarDesactivarCtrls(false);
+                btnAgregarAlumno.Text = "Agregar";
+                btnModificarAlumno.Text = "Modificar";
+            }
+        }
+
+        private void btnModificarAlumno_Click(object sender, EventArgs e)
+        {
+            if (btnModificarAlumno.Text == "Modificar")
+            {
+                btnAgregarAlumno.Text = "Guardar";
+                btnModificarAlumno.Text = "Cancelar";
+                activarDesactivarCtrls(true);
+            }
+            else
+            {
+                //Guardar
+                activarDesactivarCtrls(false);
+                btnAgregarAlumno.Text = "Agregar";
+                btnModificarAlumno.Text = "Modificar";
+            }
+        }
+
+        private void btnLooo_Loand(object sender, EventArgs e)
+        {
+            mostrarDatos();
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+         {
+            posicion++;
+            mostrarDatos();
          }
-    }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            posicion--;
+            mostrarDatos();
+        }
+
+        private void btnUltimoAlumno_Click(object sender, EventArgs e)
+        {
+            posicion = dt.Rows.Count - 1;
+            mostrarDatos();
+        }
+
+        private void btnPrimerAlumno_Click(object sender, EventArgs e)
+        {
+            posicion = 0;
+            mostrarDatos();
+        }
+    }   
+
+   
 }
+
