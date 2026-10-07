@@ -1,69 +1,133 @@
 ﻿using System;
-using System.Data; //Esta libreria es para trabajar con bases de datos
-using System.Data.SqlClient; //Esta libreria permite usar SQL Server
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
-
-namespace miPrimerProyectoCsharp
+namespace ramaacademica
 {
-    internal class Conexion
+    public class Conexion
     {
-        //Definir los miembros de la clase, atributos y metodos.
-        public SqlConnection objConexion = new SqlConnection(); //Conectarme a la BD.
-        public SqlCommand objComando = new SqlCommand(); //Ejecutar SQL en la BD. Lectura, Actualizacion, Eliminacion,Insercion.
-        public SqlDataAdapter objAdaptador = new SqlDataAdapter(); //un puente entre la BD y la aplicacion.
-        DataSet objDs = new DataSet(); //Es una representacion de la arquitectura de la BD en memoria.
+        // Definir miembros, atributos y objetos de ADO.NET
+        public SqlConnection objConexion = new SqlConnection();
+        public SqlCommand objComando = new SqlCommand();
+        public SqlDataAdapter objDataAdapter = new SqlDataAdapter();
+        DataSet objDs = new DataSet();
+
+        // Constructor e inicializador de los miembros de la clase
         public Conexion()
-        { //Constructor. inicializador de los atributos
+        {
+            // Apunta al archivo .mdf configurado
             String cadenaConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db_academica.mdf;Integrated Security=True";
+
             objConexion.ConnectionString = cadenaConexion;
-            objConexion.Open(); //Abrir la conexion a la BD
+
+            // Verificamos que la conexión esté abierta
+            if (objConexion.State == ConnectionState.Closed)
+            {
+                objConexion.Open();
+            }
         }
+
         public DataSet obtenerDatos()
         {
-            objDs.Clear(); //Limpiar el DataSet
-            objComando.Connection = objConexion; //Establecer la conexion para ejecutar los comandos.
-            objAdaptador.SelectCommand = objComando; //Establecer el comando de seleccion
+            objDs.Clear(); // Limpiar el dataset
+
+            objComando.Connection = objConexion;
+            objDataAdapter.SelectCommand = objComando;
+
+            // 1. Cargar Alumnos
             objComando.CommandText = "SELECT * FROM alumnos";
-            objAdaptador.Fill(objDs, "alumnos");//Tomando los datos de la BD y llenando el DataSet
-            objComando.CommandText = "SELECT * FROM materias";
-            objAdaptador.Fill(objDs, "materias");//Tomando los datos de la BD y llenando el DataSet
+            objDataAdapter.Fill(objDs, "alumnos");
+
+            // 2. Cargar Materias
+            objComando.CommandText = "SELECT * FROM Materias";
+            objDataAdapter.Fill(objDs, "materias");
+
+            // 3. Cargar Periodos
+            objComando.CommandText = "SELECT * FROM periodos";
+            objDataAdapter.Fill(objDs, "periodos");
+
+            // 4. Cargar Notas y Detalle de Notas
+            objComando.CommandText = @"SELECT dn.idDnota, a.Nombre AS Alumno, m.nombre AS Materia, 
+                                              p.nombre AS Periodo, dn.nota 
+                                       FROM dnotas dn
+                                       INNER JOIN notas n ON dn.idNota = n.idNota
+                                       INNER JOIN alumnos a ON n.idAlumno = a.IdAlumno
+                                       INNER JOIN Materias m ON n.idMateria = m.IdMateria
+                                       INNER JOIN periodos p ON dn.idPeriodo = p.idPeriodo";
+            objDataAdapter.Fill(objDs, "notas");
 
             return objDs;
         }
+
         public string administrarDatosAlumnos(String[] datos, String accion)
         {
             String sql = "";
             if (accion == "nuevo")
             {
-                sql = "INSERT INTO alumnos(codigo,nombre,direccion,telefono) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3]
-                + "', '" + datos[4] + "')";
+                sql = "INSERT INTO alumnos (codigo, nombre, direccion, telefono, email) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "', '" + datos[4] + "', '" + datos[5] + "')";
             }
             else if (accion == "modificar")
             {
-                sql = "UPDATE alumnos SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', direccion='" + datos[3] + "', telefono='" +
-                datos[4] + "' WHERE idAlumno='" + datos[0] + "'";
+                sql = "UPDATE alumnos SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', direccion='" + datos[3] + "', telefono='" + datos[4] + "', email='" + datos[5] + "' WHERE IdAlumno=" + datos[0];
             }
             else if (accion == "eliminar")
             {
-                sql = "DELETE FROM alumnos WHERE idAlumno='" + datos[0] + "'";
+                sql = "DELETE FROM alumnos WHERE IdAlumno=" + datos[0];
             }
             return ejecutarSQL(sql);
         }
+
         public string administrarDatosMaterias(String[] datos, String accion)
         {
             String sql = "";
             if (accion == "nuevo")
             {
-                sql = "INSERT INTO materias(codigo,nombre,uv) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "')";
+                sql = "INSERT INTO Materias (codigo, nombre, uv) VALUES ('" + datos[1] + "', '" + datos[2] + "', " + datos[3] + ")";
             }
-
-
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE Materias SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', uv=" + datos[3] + " WHERE IdMateria=" + datos[0];
+            }
             else if (accion == "eliminar")
             {
-                sql = "DELETE FROM materias WHERE idMateria='" + datos[0] + "'";
+                sql = "DELETE FROM Materias WHERE IdMateria=" + datos[0];
             }
             return ejecutarSQL(sql);
         }
+
+        public string administrarDatosPeriodos(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                sql = "INSERT INTO periodos (codigo, nombre) VALUES ('" + datos[1] + "', '" + datos[2] + "')";
+            }
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE periodos SET codigo='" + datos[1] + "', nombre='" + datos[2] + "' WHERE idPeriodo=" + datos[0];
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE FROM periodos WHERE idPeriodo=" + datos[0];
+            }
+            return ejecutarSQL(sql);
+        }
+
+        public string administrarDatosNotas(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                // datos[0] = idAlumno, datos[1] = idMateria
+                sql = "INSERT INTO notas (idAlumno, idMateria) VALUES (" + datos[0] + ", " + datos[1] + ")";
+            }
+            return ejecutarSQL(sql);
+        }
+
         public String ejecutarSQL(String sql)
         {
             try
@@ -79,5 +143,3 @@ namespace miPrimerProyectoCsharp
         }
     }
 }
-
-

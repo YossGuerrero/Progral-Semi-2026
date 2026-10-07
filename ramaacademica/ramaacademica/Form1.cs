@@ -1,4 +1,6 @@
-﻿using System;
+﻿using miPrimeaAplicacion;
+using ramaacademica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace miPrimerProyectoCsharp
+namespace miPrimeaAplicacion
 {
     public partial class Form1 : Form
     {
@@ -25,10 +27,12 @@ namespace miPrimerProyectoCsharp
 
         private void actualizarDs()
         {
-            objDs.Clear(); //Limpiar el DataSet
+            objDs.Clear();
             objDs = objCOnexion.obtenerDatos();
             objDt = objDs.Tables["alumnos"];
-            objDt.PrimaryKey = new DataColumn[] { objDt.Columns["IdAlumno"] };
+
+            // Llave primaria configurada a idAlumno
+            objDt.PrimaryKey = new DataColumn[] { objDt.Columns["idAlumno"] };
 
             grdAlumnos.DataSource = objDt.DefaultView;
             mostrarDatos();
@@ -36,7 +40,7 @@ namespace miPrimerProyectoCsharp
 
         private void mostrarDatos()
         {
-            if (objDt.Rows.Count > 0)
+            if (objDt.Rows.Count > 0 && posicion < objDt.Rows.Count)
             {
                 idAlumno.Text = objDt.Rows[posicion]["idAlumno"].ToString();
                 txtCodigoAlumno.Text = objDt.Rows[posicion]["codigo"].ToString();
@@ -51,15 +55,13 @@ namespace miPrimerProyectoCsharp
         private void Form1_Load(object sender, EventArgs e)
         {
             actualizarDs();
-            
-            mostrarDatos();
         }
 
         private void btnSiguienteAlumno_Click(object sender, EventArgs e)
         {
             if (posicion < objDt.Rows.Count - 1)
             {
-                posicion++;// posicion=posicion+1
+                posicion++;
                 mostrarDatos();
             }
             else
@@ -72,7 +74,7 @@ namespace miPrimerProyectoCsharp
         {
             if (posicion > 0)
             {
-                posicion--;// posicion=posicion-1
+                posicion--;
                 mostrarDatos();
             }
             else
@@ -83,14 +85,20 @@ namespace miPrimerProyectoCsharp
 
         private void btnUltimoAlumno_Click(object sender, EventArgs e)
         {
-            posicion = objDt.Rows.Count - 1;
-            mostrarDatos();
+            if (objDt.Rows.Count > 0)
+            {
+                posicion = objDt.Rows.Count - 1;
+                mostrarDatos();
+            }
         }
 
         private void btnPrimeroAlumno_Click(object sender, EventArgs e)
         {
-            posicion = 0;
-            mostrarDatos();
+            if (objDt.Rows.Count > 0)
+            {
+                posicion = 0;
+                mostrarDatos();
+            }
         }
 
         private void estadoControles(Boolean estado)
@@ -120,7 +128,7 @@ namespace miPrimerProyectoCsharp
                 limpiarControles();
             }
             else
-            {//Guardar
+            { // Guardar
                 String[] alumnos = {
                     idAlumno.Text, txtCodigoAlumno.Text, txtNombreAlumno.Text, txtDireccionAlumno.Text,
                     txtTelefonoAlumno.Text
@@ -150,7 +158,7 @@ namespace miPrimerProyectoCsharp
                 accion = "modificar";
             }
             else
-            {//Cancelar
+            { // Cancelar
                 mostrarDatos();
                 estadoControles(false);
                 btnAgregarAlumno.Text = "Nuevo";
@@ -195,7 +203,7 @@ namespace miPrimerProyectoCsharp
             try
             {
                 DataView objDv = objDt.DefaultView;
-                objDv.RowFilter = "codigo like '%" + valor + "%' OR nombre like '" + valor + "%'";
+                objDv.RowFilter = "codigo like '%" + valor + "%' OR nombre like '%" + valor + "%'";
                 grdAlumnos.DataSource = objDv;
                 seleccionarAlumno();
             }
@@ -211,12 +219,18 @@ namespace miPrimerProyectoCsharp
             {
                 if (grdAlumnos.CurrentRow == null)
                 {
-                    MessageBox.Show("No hay filas");
                     return;
                 }
+
+
                 string id = grdAlumnos.CurrentRow.Cells["id"].Value.ToString();
-                posicion = objDt.Rows.IndexOf(objDt.Rows.Find(id));
-                mostrarDatos();
+
+                DataRow dr = objDt.Rows.Find(id);
+                if (dr != null)
+                {
+                    posicion = objDt.Rows.IndexOf(dr);
+                    mostrarDatos();
+                }
             }
             catch (Exception e)
             {
@@ -224,12 +238,22 @@ namespace miPrimerProyectoCsharp
             }
         }
 
-        private void grdAlumnos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void grdAlumnos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             seleccionarAlumno();
         }
 
         private void grbDatosAlumno_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBusqueda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idAlumno_Click(object sender, EventArgs e)
         {
 
         }
