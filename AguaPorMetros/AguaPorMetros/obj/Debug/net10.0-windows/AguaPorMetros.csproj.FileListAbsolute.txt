@@ -1,0 +1,17 @@
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\bin\Debug\net10.0-windows\AguaPorMetros.exe
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\bin\Debug\net10.0-windows\AguaPorMetros.deps.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\bin\Debug\net10.0-windows\AguaPorMetros.runtimeconfig.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\bin\Debug\net10.0-windows\AguaPorMetros.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\bin\Debug\net10.0-windows\AguaPorMetros.pdb
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.Form1.resources
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.csproj.GenerateResource.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.AssemblyInfoInputs.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.AssemblyInfo.cs
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.csproj.CoreCompileInputs.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.sourcelink.json
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\refint\AguaPorMetros.dll
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.pdb
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\AguaPorMetros.genruntimeconfig.cache
+C:\Users\Yosse\OneDrive\Desktop\Progral-Semi-2026\AguaPorMetros\AguaPorMetros\obj\Debug\net10.0-windows\ref\AguaPorMetros.dll
