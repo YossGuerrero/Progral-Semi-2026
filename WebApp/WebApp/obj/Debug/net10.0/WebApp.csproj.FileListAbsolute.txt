@@ -189,7 +189,6 @@ C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\r
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\scopedcss\bundle\WebApp.styles.css
-C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\compressed\qfdz7oa465-{0}-7vsyug07qu-7vsyug07qu.gz
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\staticwebassets.development.json
@@ -202,3 +201,6 @@ C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\r
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\WebApp.pdb
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\WebApp.genruntimeconfig.cache
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\ref\WebApp.dll
+C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\compressed\vpqvmu3037-{0}-ebw5ppbwcl-ebw5ppbwcl.gz
+C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\compressed\qfdz7oa465-{0}-cq10l61wfu-cq10l61wfu.gz
+C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\obj\Debug\net10.0\compressed\q9q0gic0ss-{0}-kye63nmerr-kye63nmerr.gz

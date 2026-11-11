@@ -1,3 +1,7 @@
 wwwroot\ing\Logo.png
+wwwroot\views\app.js
 wwwroot\views\index.html
+wwwroot\views\alumno.html
+C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\wwwroot\views\app.js
 C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\wwwroot\views\index.html
+C:\Users\Yosse\source\repos\Progral-Semi-2026o\WebApp\WebApp\wwwroot\views\alumno.html
