@@ -56,7 +56,7 @@ var accion = 'nuevo';
         e.preventDefault();
         guardarAlumno();
     });
-    function guardarAlumno() {
+    async function guardarAlumno() {
         let datos = {
             codigo: txtCodigoAlumno.value,
             nombre: txtNombreAlumno.value,

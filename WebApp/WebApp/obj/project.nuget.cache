@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "yZI91DEzVzE=",
-  "success": false,
+  "dgSpecHash": "j0FIUlNdzG4=",
+  "success": true,
   "projectFilePath": "C:\\Users\\Yosse\\source\\repos\\Progral-Semi-2026o\\WebApp\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yosse\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
@@ -18,9 +18,9 @@
     "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\5.0.0\\microsoft.codeanalysis.workspaces.msbuild.5.0.0.nupkg.sha512",
     "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.data.sqlclient\\6.1.7\\microsoft.data.sqlclient.6.1.7.nupkg.sha512",
     "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\6.0.3\\microsoft.data.sqlclient.sni.runtime.6.0.3.nupkg.sha512",
-    "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.13\\microsoft.entityframeworkcore.10.0.13.nupkg.sha512",
-    "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.13\\microsoft.entityframeworkcore.abstractions.10.0.13.nupkg.sha512",
-    "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.13\\microsoft.entityframeworkcore.analyzers.10.0.13.nupkg.sha512",
+    "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.15\\microsoft.entityframeworkcore.10.0.15.nupkg.sha512",
+    "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.15\\microsoft.entityframeworkcore.abstractions.10.0.15.nupkg.sha512",
+    "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.15\\microsoft.entityframeworkcore.analyzers.10.0.15.nupkg.sha512",
     "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore.design\\10.0.15\\microsoft.entityframeworkcore.design.10.0.15.nupkg.sha512",
     "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.15\\microsoft.entityframeworkcore.relational.10.0.15.nupkg.sha512",
     "C:\\Users\\Yosse\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.15\\microsoft.entityframeworkcore.sqlserver.10.0.15.nupkg.sha512",
@@ -64,17 +64,6 @@
       "warningLevel": 1,
       "filePath": "C:\\Users\\Yosse\\source\\repos\\Progral-Semi-2026o\\WebApp\\WebApp\\WebApp.csproj",
       "libraryId": "Microsoft.OpenApi",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Advertencia como error: Degradación del paquete detectada: Microsoft.EntityFrameworkCore de 10.0.15 a 10.0.13. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n WebApp -> Microsoft.EntityFrameworkCore.SqlServer 10.0.15 -> Microsoft.EntityFrameworkCore.Relational 10.0.15 -> Microsoft.EntityFrameworkCore (>= 10.0.15) \r\n WebApp -> Microsoft.EntityFrameworkCore (>= 10.0.13)",
-      "projectPath": "C:\\Users\\Yosse\\source\\repos\\Progral-Semi-2026o\\WebApp\\WebApp\\WebApp.csproj",
-      "filePath": "C:\\Users\\Yosse\\source\\repos\\Progral-Semi-2026o\\WebApp\\WebApp\\WebApp.csproj",
-      "libraryId": "Microsoft.EntityFrameworkCore",
       "targetGraphs": [
         "net10.0"
       ]
